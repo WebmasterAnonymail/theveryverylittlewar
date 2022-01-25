@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Very Very Little War</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/lib.css">
+		<script src="js/lib.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body style="height:100%">
+		<div id="topbar">
+			<div class="ressource">
+				<img src="image/particules/proton.png">
+				<span id="preview_carbone">10</span>
+			</div>
+			<div class="ressource">
+				<img src="image/particules/neutron.png">
+				<span id="preview_oxygene">10</span>
+			</div>
+			<div class="ressource">
+				<img src="image/particules/electron.png">
+				<span id="preview_azote">10</span>
+			</div>
+			<div class="ressource">
+				<img src="image/ressources/energie.png">
+				<span id="preview_charge">0</span>
+			</div>
+			<div class="ressource">
+				<img src="image/ressources/points.png">
+				<span id="preview_points">10</span>
+			</div>
+		</div>
+		<div id="notifbar"></div>
+		<div id="iframe0" class="iframe" style="top:10%;left:7.5%;">
+			<div class="small_content" onclick="open_iframe(0)">
+				<img class="miniature" src="image/lieu/molecules.png">
+			</div>
+			<div class="big_content">
+				<iframe src="html/molecules.html"></iframe>
+			</div>
+		</div>
+		<div id="iframe1" class="iframe" style="top:55%;left:7.5%;">
+			<div class="small_content" onclick="open_iframe(1)">
+				<img class="miniature" src="image/lieu/atomes.png">
+			</div>
+			<div class="big_content">
+				<iframe src="html/atomes.html"></iframe>
+			</div>
+		</div>
+		<div id="iframe2" class="iframe" style="top:10%;left:37.5%;">
+			<div class="small_content" onclick="open_iframe(2)">
+				<img class="miniature" src="image/lieu/classement.png">
+			</div>
+			<div class="big_content">
+				<iframe src="html/classement.html"></iframe>
+			</div>
+		</div>
+		<div id="iframe3" class="iframe" style="top:55%;left:37.5%;">
+			<div class="small_content" onclick="open_iframe(3)">
+				<img class="miniature" src="image/lieu/carte.png">
+			</div>
+			<div class="big_content">
+				<iframe src="html/carte.html"></iframe>
+			</div>
+		</div>
+		<div id="iframe4" class="iframe" style="top:10%;left:67.5%;">
+			<div class="small_content" onclick="open_iframe(4)">
+				<img class="miniature" src="image/lieu/batiments.png">
+			</div>
+			<div class="big_content">
+				<iframe src="html/batiments.html"></iframe>
+			</div>
+		</div>
+		<div id="iframe5" class="iframe" style="top:55%;left:67.5%;">
+			<div class="small_content" onclick="open_iframe(5)">
+				<img class="miniature" src="image/lieu/rapports.png">
+			</div>
+			<div class="big_content">
+				<iframe src="html/rapports.html"></iframe>
+			</div>
+		</div>
+		<div id="popup_mask" style="display: none;"></div>
+		<a href="html/accueil.html" class="link_button">
+			<div class="button_labeled rotated" id="accueil_button">
+				<img src="image/autre/accueil.png" class="button_labeled_image">
+				<span class="button_labeled_label">accueil</span>
+			</div>
+		</a>
+	</body>
+</html>

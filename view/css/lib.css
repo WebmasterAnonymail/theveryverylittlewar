@@ -1,0 +1,178 @@
+@font-face{
+	font-family: "Molecule";
+	src: url("../font/Molecule.ttf") format("truetype");
+}
+@font-face{
+	font-family: "BigTitle";
+	src: url("../font/Title.ttf") format("truetype");
+}
+@keyframes rainbow{
+	0% {color: hsl(0deg 100% 50%)}
+	17% {color: hsl(60deg 100% 50%)}
+	33% {color: hsl(120deg 100% 50%)}
+	50% {color: hsl(180deg 100% 50%)}
+	67% {color: hsl(240deg 100% 50%)}
+	83% {color: hsl(300deg 100% 50%)}
+	100% {color: hsl(360deg 100% 50%)}
+}
+*{
+	--argent-color: #cecece;
+	--or-color: #d9a710;
+	--platine-color: #faf0c5;
+}
+iframe{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+body{
+	background-image: url("../image/background.png");
+	background-repeat: repeat;
+	width: 100%;
+	margin: 0px;
+	font-size: 20px;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+hr{
+	margin: 5px;
+	border: 0.5px solid #808080;
+}
+a{
+	text-decoration: none;
+}
+rainbow{
+	animation-name: rainbow;
+	animation-duration: 2500ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+fieldset{
+	border-radius: 10px;
+	background-image: url(../image/backgroung_card.jpg);
+}
+blockquote{
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	text-align: center;
+}
+thead{
+	background-color: #e0e0e0;
+}
+td,th{
+	border: 1px solid #606060;
+}
+#popup_mask{
+	background-color: #00000080;
+	z-index: 900;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.ressource{
+	border-radius: 16px;
+	height: 32px;
+	margin: 4px;
+	background-color: #c0c0c0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.ressource>img{
+	border-radius: 16px;
+	height: 25px;
+	padding: 2.5px;
+	border: 1px solid #000000;
+	background-color: #ffffff;
+	vertical-align: middle;
+	overflow: visible;
+}
+.ressource>span{
+	padding-right: 10px;
+}
+.fullscreen_image{
+	height: 10%;
+	width: 10%;
+	z-index: 800;
+	position: fixed;
+	opacity: 50%;
+}
+.positive{
+	color: #0000ff;
+}
+.neutral{
+	color: #00ff00;
+}
+.negative{
+	color: #ff0000;
+}
+.button{
+	height: 32px;
+	width: 32px;
+	margin: 4px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.button_labeled{
+	margin: 12px;
+	border: 1px solid #000000;
+	padding: 12px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: inline-block;
+	background-image: url("../image/backgroung_card.jpg");
+}
+.button_labeled>img{
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+.button_labeled>span{
+	padding: 10px;
+}
+.rotated{
+	transform-origin: 0% 0%;
+	transform: rotate(-90deg);
+}
+.link_button{
+	color: #000000;
+}
+.icon{
+	height:25px;
+	width:25px;
+	vertical-align:middle;
+}
+.fenetre{
+	position:absolute;
+	top:5%;
+	left:15%;
+	width:70%;
+	max-height:90%;
+	border:2px outset #808080;
+	border-radius: 5px;
+	padding:10px;
+	box-sizing: border-box;
+	background-color:#ffffff;
+	box-shadow:5px 5px 10px 0px #404040;
+	z-index:1000;
+	overflow-y: auto;
+}
+.alternate_body{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.alternate_body[used="yes"]{
+	display: block;
+}
